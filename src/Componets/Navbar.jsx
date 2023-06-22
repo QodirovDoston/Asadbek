@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import itech from '../assets/Group 620 (2).png'
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(true)
 
     const handleNav = () => {
         setNav(!nav)
     }
     return (
         <div className=' flex justify-between items-center  h-24 max-w[1240px] m-auto px-4 text-white'>
-            <h3 className='w-full text-3xl font-bold text-[#001adf]'>Doston</h3>
+            <img className='w-[10%]'  src={itech} alt="" />
             <ul className='md:flex hidden '>
                 <li className='p-4'>home</li>
                 <li className='p-4'>company</li>
